@@ -1,0 +1,164 @@
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+html, body {
+  height: 100vh;
+  width: 100vw;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Mobile Header */
+.mobile-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  padding: 0 10px;
+  background-color: white;
+  z-index: 9999;
+}
+
+.menu-icon,
+.search-icon {
+  font-size: 24px;
+  color: #111111;
+  cursor: pointer;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+.center img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+h1.title {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #333366;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 10px;
+}
+
+/* Content */
+.content {
+  padding: 0;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  background-color: white;
+}
+
+.group {
+  margin-bottom: 50px;
+  background-color: white;
+}
+
+.group-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 15px;
+  color: #333;
+  background-color: white;
+}
+
+.group-title i {
+  font-size: 25px;
+}
+
+.websites {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  background-color: white;
+  padding: 5px;
+  padding-left: 20px;
+  gap: 20px;
+}
+
+.item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.item-title {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #111111;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+/* Footer */
+.footer {
+  background-color: #ffffff;
+  color: #003333;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 0.9em;
+}
+
+/* Animation */
+.heart {
+  color: #ff0000;
+  animation: heart-beat 1s ease-in-out infinite;
+  display: inline-block;
+}
+
+@keyframes heart-beat {
+  0% { transform: scale(1); }
+  14% { transform: scale(1.3); }
+  28% { transform: scale(1); }
+}
